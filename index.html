@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Pomodoro</h1>
+    </header>
+
+    <main class="principal">
+        <section class="izquierda">
+            <p class="descripcion">Optimiza tu productividad, sumérgete en lo que importa.</p>
+        </section>
+
+        <section class="derecha">
+            <div class="caja">
+                <ul class="botones">
+                    <li><button id="enfocar">Enfocar</button></li>
+                    <li><button id="cortoDescanso">Corto descanso</button></li>
+                    <li><button id="largoDescanso">Largo descanso</button></li>
+                </ul>
+            </div>
+
+            <div class="cronometro">
+                <p id="tiempo">25:00</p>
+            </div>
+
+            <div class="iniciar">
+                <button id="iniciar">Iniciar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

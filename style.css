@@ -1,0 +1,52 @@
+/* Estilos para el encabezado */
+header {
+    margin-top: 100px;
+    text-align: center;
+    
+}
+
+/* Estilos para la sección principal */
+.principal {
+    padding: 100PX;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección izquierda */
+.izquierda {
+    text-align: left;
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Estilos para la lista de botones */
+.botones {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para los elementos de la lista de botones */
+.botones li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Estilos para las secciones de cronómetro y pausar */
+.cronometro,
+.iniciar {
+    text-align: center;
+}
+
+/* Estilos para la sección derecha */
+.derecha {
+    background-color: aqua;
+}
+
+/* Estilos para la caja interna */
+.caja {
+    padding: 10px;
+}
+
