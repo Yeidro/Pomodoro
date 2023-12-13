@@ -2,51 +2,114 @@
 header {
     margin-top: 100px;
     text-align: center;
-    
+}
+
+body {
+    background-color: rgb(30, 146, 128);
 }
 
 /* Estilos para la sección principal */
 .principal {
-    padding: 100PX;
+    padding: 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no hay suficiente espacio */
+    justify-content: center;
+    
 }
 
 /* Estilos para la sección izquierda */
-.izquierda {
-    text-align: left;
+.lista_Parrafo {
+    
+    text-align: left; /* Centra el texto */
     flex: 1;
+    max-width: 400px; /* Establece un ancho máximo para evitar que la sección se expanda demasiado */
+    background-color: rgb(30, 146, 128);
+    font-size: 60px;
     margin-right: 20px;
+    padding-left:100px ;
+   
+}
+.parrafos {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    color:rgb(242, 236, 236);
+    padding: 0; /* Elimina cualquier relleno predeterminado de la lista */
+    margin: 0; /* Elimina cualquier margen predeterminado de la lista */
+}
+
+/* Estilos para la caja interna */
+.caja {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilos para la lista de botones */
 .botones {
     list-style-type: none;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
 }
 
-/* Estilos para los elementos de la lista de botones */
 .botones li {
-    display: inline-block;
-    margin-left: 10px;
+    margin: 0 5px; /* Espacio uniforme en ambos lados del botón */
+    
 }
 
+.botones li button {
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(30, 146, 128);
+    border: 2px solid white;
+    border-radius: 10px;
+    color: orange;
+    font-weight: bold;
+   
+}
+
+
+
 /* Estilos para las secciones de cronómetro y pausar */
-.cronometro,
-.iniciar {
+.cronometro {
     text-align: center;
 }
 
-/* Estilos para la sección derecha */
-.derecha {
-    background-color: aqua;
+#iniciar {
+    font-size: 15px;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgb(30, 146, 128);
+    border: 2px solid white;
+    border-radius: 10px;
+    color:orange;
+    font-weight: bold;
 }
 
-/* Estilos para la caja interna */
-.caja {
-    padding: 10px;
+.pomodoro {
+    border: 2px solid orange;
+    border-radius: 10px;
+    margin: 0 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#tiempo {
+    font-size: 150px;
+    color: white;
+    margin: 30px;
+    padding: 40px;
+    
+}
+
+.final_Parrafo{
+    font-weight: bold;
+}
