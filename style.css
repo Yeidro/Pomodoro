@@ -1,16 +1,21 @@
 /* Estilos para el encabezado */
 header {
+    
     margin-top: 100px;
     text-align: center;
+    
+}
+.imagen{
+    width: 250px;
 }
 
 body {
-    background-color: rgb(30, 146, 128);
+    background-color: #D7BDE2 ;
 }
 
 /* Estilos para la sección principal */
 .principal {
-    padding: 100px;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no hay suficiente espacio */
     justify-content: center;
@@ -23,15 +28,15 @@ body {
     text-align: left; /* Centra el texto */
     flex: 1;
     max-width: 400px; /* Establece un ancho máximo para evitar que la sección se expanda demasiado */
-    background-color: rgb(30, 146, 128);
     font-size: 60px;
     margin-right: 20px;
     padding-left:100px ;
+    padding-top: 18PX;
    
 }
 .parrafos {
     list-style-type: none; /* Elimina los puntos de la lista */
-    color:rgb(242, 236, 236);
+    color:black;
     padding: 0; /* Elimina cualquier relleno predeterminado de la lista */
     margin: 0; /* Elimina cualquier margen predeterminado de la lista */
 }
@@ -63,19 +68,26 @@ body {
     font-size: 15px;
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: rgb(30, 146, 128);
-    border: 2px solid white;
+    background-color:  #D7BDE2 ;
+    border: 2px solid #ffffff;
     border-radius: 10px;
-    color: orange;
+    color:black;
     font-weight: bold;
+    cursor: pointer;
+    
    
 }
+
+
 
 
 
 /* Estilos para las secciones de cronómetro y pausar */
 .cronometro {
     text-align: center;
+    background-color: #ffffff;
+    border-radius: 30px;
+    
 }
 
 #iniciar {
@@ -86,15 +98,24 @@ body {
     margin-top: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
-    background-color: rgb(30, 146, 128);
-    border: 2px solid white;
+    background-color: black;
+    border: 2px solid black;
     border-radius: 10px;
-    color:orange;
+    color: #ffffff;
     font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+#iniciar:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); 
+    transform: scale(1.1);
+    
+
 }
 
 .pomodoro {
-    border: 2px solid orange;
+    
     border-radius: 10px;
     margin: 0 20px; 
     display: flex;
@@ -104,12 +125,69 @@ body {
 
 #tiempo {
     font-size: 150px;
-    color: white;
+    color:black;
     margin: 30px;
     padding: 40px;
+    width: 350px; /* Tamaño fijo para la caja del cronómetro */
+    text-align: center; /* Centra el texto horizontalmente */
+    display: inline-block; /* Evita que el ancho se expanda automáticamente */
+    
     
 }
 
 .final_Parrafo{
     font-weight: bold;
+}
+/* Estilos para el fondo de la página */
+#main-container {
+    transition: background-color 0.5s ease;
+}
+
+/* Estilos para pantallas más pequeñas (móviles y tablets) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .imagen {
+        width: 100%; 
+        max-width: 150px; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+    }
+
+    .principal {
+        flex-direction: column; /* Apila los elementos uno encima del otro en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos en el eje cruzado */
+    }
+
+    header {
+        margin-top: 20px; /* Reduce el margen superior del encabezado en pantallas más pequeñas */
+        text-align: center; /* Centra el texto del encabezado en pantallas más pequeñas */
+    }
+
+    .lista_Parrafo {
+        max-width: 100%; /* Asegura que la sección de texto ocupe el ancho completo en pantallas pequeñas */
+        margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+        text-align: center; /* Centra el texto en pantallas más pequeñas */
+        padding-left: 0; /* Elimina el relleno izquierdo en pantallas más pequeñas */
+    }
+
+    .botones li button {
+        font-size: 12px; /* Ajusta el tamaño de fuente de los botones en pantallas más pequeñas */
+        padding: 8px 16px; /* Ajusta el relleno de los botones en pantallas más pequeñas */
+    }
+
+    #tiempo {
+        font-size: 60px; /* Ajusta el tamaño de fuente del cronómetro en pantallas más pequeñas */
+        margin: 10px; /* Ajusta el margen del cronómetro en pantallas más pequeñas */
+        padding: 10px; /* Ajusta el relleno del cronómetro en pantallas más pequeñas */
+        width: auto; /* Ajusta la anchura automática para evitar que se estire demasiado */
+    }
+
+    .iniciar button {
+        padding: 8px 20px; /* Ajusta el relleno del botón de inicio en pantallas más pequeñas */
+    }
+
+    .cronometro {
+        width: 100%; /* Asegura que el cronómetro ocupe el ancho completo en pantallas más pequeñas */
+    }
 }
