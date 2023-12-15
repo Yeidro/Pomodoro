@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     reproducirSonidoAlerta();
                     restablecerCronometro(); // Restablecer el cronómetro al llegar a cero
                 }
-            }, 10);
+            }, 1000);
 
             // Reproducir sonido al iniciar
             reproducirSonido();
