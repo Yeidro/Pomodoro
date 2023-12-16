@@ -167,13 +167,17 @@ body {
     .lista_Parrafo {
         max-width: 100%; /* Asegura que la sección de texto ocupe el ancho completo en pantallas pequeñas */
         margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
-        text-align: center; /* Centra el texto en pantallas más pequeñas */
+        text-align: left; /* Centra el texto en pantallas más pequeñas */
         padding-left: 0; /* Elimina el relleno izquierdo en pantallas más pequeñas */
+        font-size: 40px; /* Ajusta el tamaño de la fuente para los párrafos en pantallas más pequeñas */
     }
 
     .botones li button {
         font-size: 12px; /* Ajusta el tamaño de fuente de los botones en pantallas más pequeñas */
         padding: 8px 16px; /* Ajusta el relleno de los botones en pantallas más pequeñas */
+        width: 100%; /* Establece el ancho al 100% para que ocupen todo el ancho del contenedor */
+        box-sizing: border-box; /* Asegura que el relleno y el borde no afecten el ancho total */
+        height: 40px; /* Establece una altura fija para todos los botones */
     }
 
     #tiempo {
